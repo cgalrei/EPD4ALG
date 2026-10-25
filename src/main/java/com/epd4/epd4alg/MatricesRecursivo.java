@@ -24,8 +24,6 @@ public class MatricesRecursivo {
         //CASO BASE: m=1, n=1, p=1
         if(m==1&&n==1&&p==1){
             C[i][k] += A[i][j] * B[j][k];
-
-            System.out.println(C[i][k]);    /*provisional para DEBUG*/
             return;
         }
         
