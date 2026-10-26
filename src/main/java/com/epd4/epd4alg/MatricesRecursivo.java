@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.epd4.epd4alg;
 
-/**
- *
- * @author carlos
- */
 public class MatricesRecursivo {
     /*
     -----PARÁMETROS-----
@@ -26,7 +18,6 @@ public class MatricesRecursivo {
             C[i][k] += A[i][j] * B[j][k];
             return;
         }
-        
         
         //CASO GENERAL 1: m es el mayor. Parte por la mitad las filas de A
         if(m>=n && m>=p){
