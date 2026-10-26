@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.epd4.epd4alg;
 
-/**
- *
- * @author lucas
- */
 public class MatricesIterativo {
     public static int[][] multiplicarMatrices(int[][] m1, int[][] m2){
         /*Esta función verifica que se cumpla la condición para multiplicar una matriz, en caso de poder
