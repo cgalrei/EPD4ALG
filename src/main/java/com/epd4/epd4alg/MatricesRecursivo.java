@@ -12,12 +12,13 @@ public class MatricesRecursivo {
     hasta el caso base, en el que la dimensión sea igual a 1. En el caso base ambos elementos de 
     dimensión 1 se multiplican.
     */
-    public static void multiplicarMatrices(int[][]A, int[][]B, int[][]C, int i, int j, int k, int m, int n, int p){
+    public static int[][] multiplicarMatrices(int[][]A, int[][]B, int[][]C, int i, int j, int k, int m, int n, int p){
         //CASO BASE: m=1, n=1, p=1
         if(m==1&&n==1&&p==1){
             C[i][k] += A[i][j] * B[j][k];
-            return;
+            return C;
         }
+        
         
         //CASO GENERAL 1: m es el mayor. Parte por la mitad las filas de A
         if(m>=n && m>=p){
@@ -39,5 +40,6 @@ public class MatricesRecursivo {
             multiplicarMatrices(A,B,C,i,j,k,m,h,p);
             multiplicarMatrices(A,B,C,i,j+h,k,m,n-h,p);
         }
+        return C;
     }
 }
