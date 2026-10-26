@@ -9,18 +9,6 @@ package com.epd4.epd4alg;
  * @author lucas
  */
 public class MatricesIterativo {
-    /*
-    public static void main(String[] args) {
-        //ESTO LO COMENTO PORQUE CREO QUE NO HACE FALTA.
-        
-        int[][] matriz = MatrizAleatoria.matrizAleatoria(3, 2);
-        int[][] matriz2 = MatrizAleatoria.matrizAleatoria(3, 4);
-        int[][] resultado = multiplicarMatrices(matriz, matriz2);
-        MatrizAleatoria.imprimirMatriz(resultado);
-        
-    }
-    */
-    
     public static int[][] multiplicarMatrices(int[][] m1, int[][] m2){
         /*Esta función verifica que se cumpla la condición para multiplicar una matriz, en caso de poder
         operamos, de lo contrario, se enviará un mensaje de error y se devolverá la matriz nula*/
